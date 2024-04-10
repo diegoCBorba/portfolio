@@ -1,0 +1,32 @@
+
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); 
+
+
+:root{
+  --color1: #473824;
+  --color2: #D0BEA9;
+  --color3: #C79B65;
+  --color4: #47413A;
+  --color5: #94734B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* TRANSITION */
+
+a, .btn{
+  transition: all 300ms ease;
+}
