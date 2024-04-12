@@ -10,7 +10,7 @@ export function HamburgerNav(){
   
   return(
     <nav id="hamburger-nav">
-      <div className="logo">Diego Cardoso</div>
+      <div className="logo"><a href="">&#169; Diego Cardoso</a></div>
       <div className="hamburger-menu">
         <div 
         className={`hamburger-icon ${menuState ? 'open' : ''}`}  
@@ -22,10 +22,10 @@ export function HamburgerNav(){
         <div 
         className={`menu-links ${menuState ? 'open' : ''}`} 
         onClick={toggleMenu}>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#experience">Experiência</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contatos</a></li>
+          <li><a className="nav-a" href="#about">Sobre</a></li>
+          <li><a className="nav-a" href="#experience">Experiência</a></li>
+          <li><a className="nav-a" href="#projects">Projetos</a></li>
+          <li><a className="nav-a" href="#contact">Contatos</a></li>
         </div>
       </div>
     </nav>

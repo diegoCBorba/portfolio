@@ -11,16 +11,8 @@ export function ArticleProject(props: props){
       </div>
       <h2 className='experience-sub-title project-tile'>{props.title}</h2>
       <div className='btn-container'>
-        <button
-        className='btn btn-color-2'
-        onClick={() => location.href='https://github.com/diegoCBorba/pass-in-web'}>
-          GitHub
-        </button>
-        <button
-        className='btn btn-color-1 project-btn'
-        onClick={() => location.href='https://github.com/diegoCBorba/pass-in-web'}>
-          Live Demo
-        </button>
+        <a data-back="github" data-front="github" href="https://github.com/diegoCBorba/pass-in-web" target="_blank" className="btn btn-color-1"/>
+        <a data-back="Live Demo" data-front="Live Demo" href="https://github.com/diegoCBorba/pass-in-web" target="_blank" className="btn btn-color-2"/>
       </div>
     </div>
   )

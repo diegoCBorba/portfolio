@@ -3,9 +3,9 @@ nav, .nav-links{
 }
 
 nav{
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 17vh;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .nav-links{
@@ -14,24 +14,40 @@ nav{
   font-size: 1.5rem;
 }
 
-a {
-  color: black;
+.nav-a {
+  color: var(--color1);
   text-decoration: none;
-  text-decoration-color: white;
+  
+  display: inline-block;
+  position: relative;
 }
 
-a:hover{
-  color: var(--color3);
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
+.nav-a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: var(--color1);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 .logo{
   font-size: 2rem;
+  color: var(--color1);
 }
 
-.logo:hover{
-  cursor: default;
+.logo a{
+  text-decoration: none;
+  color: var(--color1);
 }
 
 @media screen and (max-width: 1200px){

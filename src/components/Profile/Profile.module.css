@@ -1,0 +1,83 @@
+.profile{
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem;
+}
+
+.profileAbove{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color1);
+}
+
+.bigNameContainer{
+  display: flex;
+  padding-bottom: 6rem;
+  font-size: 6rem;
+}
+
+.bigNameContainer span{
+  padding-top: 1rem;
+}
+
+.profileContainer{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* PARALLAX */
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+
+  color: var(--color1)
+}
+
+.parallax .scroller {
+  padding-bottom: 4rem;
+
+  font-size: 15vw;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1000px){
+  .parallax .scroller{
+    font-size: 9rem;
+  }
+
+  .profile{
+    justify-content: flex-start;
+    padding: 0 0 6rem 2rem;
+  }
+
+  .profileAbove{
+    text-shadow: 0.5px 0.5px 3px #d0bea964;
+  }
+
+  .profileContainer{
+    flex-direction: column-reverse;
+    justify-content: end;
+  }
+
+  .bigNameContainer{
+    padding-bottom: 2rem;
+  }
+}

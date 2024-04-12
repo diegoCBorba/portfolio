@@ -1,6 +1,4 @@
-import { Navbar } from "./components/Navbar/Navbar"
-import { HamburgerNav } from "./components/HamburgerNav/HamburguerNav"
-import { Profile } from "./components/Profile/Profile"
+import { Header } from "./components/Header/Header"
 import { About } from "./components/About/About"
 import { Experience } from "./components/Experience/Experience"
 import { Projects } from "./components/Projects/Projects"
@@ -10,14 +8,12 @@ import { Footer } from "./components/Footer/Footer"
 export function App() {
   return (
     <>
-      <Navbar/>
-      <HamburgerNav/>
-      <Profile/>
+      <Header/>
       <About/>
-      <Experience/>
+      {/* <Experience/>
       <Projects/>
       <Contact/>
-      <Footer/>
+      <Footer/> */}
     </>
   )
 }

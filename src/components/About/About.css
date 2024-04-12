@@ -1,103 +1,166 @@
 #about{
   position: relative;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.about-container{
+  max-width: 1440px;
+  margin: 0 10rem;
+  position: relative;
+}
+
+.sub-title-container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sub-title-container span{
+  display: block;
+  width: 4rem;
+  height: 0.4rem;
+  background-color: var(--color3);
+}
+
+#about .title, #about .section__text__p1{
+  text-align: left;
+}
+
+.section__text__p1{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.section__text__p2{
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.title{
+  font-size: 3rem;
 }
 
 .section-container{
   display: flex;
   justify-content: center;
-  gap: 4rem;
-}
-
-.section__pic-container{
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
-
-.about-details-container{
-  justify-content: center;
-  flex-direction: column ;
-}
-
-.about-containers{
   gap: 2rem;
-  margin: 2rem 0;
+  margin-top: 1rem;
 }
 
-.about-details-container, .about-containers{
+.section-socials{
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 
-.details-container{
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
+.border-socials{
+  display: block;
+  width: 0.4rem;
+  height: 100%;
+  background-color: var(--color3);
   border-radius: 2rem;
-  border: 0.1rem solid var(--color3);
-  text-align: center;
 }
 
-.details-container svg, .arrow svg{
+.social-icons{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color1);
+  color: var(--color1);
+}
+
+.social-icons:hover{
+  color: white;
+}
+
+.social-icons svg:hover{
+  animation: shake 0.5s;
+}
+
+.github:hover{
+  background-color: #D53A2B;
+  border: 1px solid #D53A2B;
+}
+
+.linkedin:hover{
+  background-color: #0077B5;
+  border: 1px solid #0077B5;
+}
+
+.email:hover{
+  background-color: #84C1D9;
+  border: 1px solid #84C1D9;
+}
+
+.icon svg{
   height: 2rem;
   width: 2rem;
 }
 
-.about-pic{
-  border-radius: 2rem;
+.section-about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.arrow{
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+.section-about div{
+  display: flex;
+  justify-content: end;
+  padding: 0 1rem;
 }
 
-@media screen and (max-width: 1400px){
-  .about-containers{
-    flex-wrap: wrap;
-  }
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 @media screen and (max-width: 1200px){
-  .section-container{
-    display: block;
-  }
-
-  section, .section-container{
-    height: fit-content;
-  }
-
-  section{
-    margin: 0 5%;
-  }
-
-  #about .section__pic-container{
-    margin-top: 2rem;
-  }
-
-  .section__pic-container{
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-
-  .about-containers{
-    margin-top: 0;
-  }
-
-  .text-container{
-    text-align: center;
+  .about-container{
+    margin: 0 4rem;
   }
 }
 
 @media screen and (max-width: 600px){
-  .about-containers{
-    flex-wrap: wrap;
+  .section-container{
+    flex-direction: column-reverse;
   }
 
-  .section__pic-container{
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+  .section-socials{
+    flex-direction: row;
+  }
+
+  .border-socials{
+    width: 100%;
+    height: 0.4rem;
+  }
+
+  .section-about div{
+    justify-content: right;
+    padding: 0;
+  }
+
+  .section__text__p1{
+    font-size: 1.1rem;
+  }
+  
+  .section__text__p2{
+    font-size: 1.3rem;
+  }
+  
+  .title{
+    font-size: 2.7rem;
   }
 }

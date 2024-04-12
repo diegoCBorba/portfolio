@@ -1,0 +1,18 @@
+#header{
+  background-color: var(--color2);
+  background-image: url(../../assets/images/profile-pic.png);
+  height: 110vh;
+  background-size: 115vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1400px){
+  #header{
+    background-size: 105vh;
+  }
+ }

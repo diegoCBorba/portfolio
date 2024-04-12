@@ -1,10 +1,15 @@
 footer{
-  height: 26vh;
   margin: 0 rem;
+  padding-bottom: 4rem;
 }
 
 footer p{
   text-align: center;
+}
+
+footer nav{
+  justify-content: center;
+  padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 600px){
