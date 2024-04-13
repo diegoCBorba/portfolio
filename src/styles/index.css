@@ -26,6 +26,55 @@ html{
   scroll-behavior: smooth;
 }
 
+section{
+  display: flex;
+  justify-content: center;
+  
+  padding-top: 4vh;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.container-section{
+  max-width: 1440px;
+  margin: 0 10rem;
+  position: relative;
+}
+
+.section__text__p1{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.section__text__p2{
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.title{
+  font-size: 3rem;
+}
+
+.sub-title-container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sub-title-container span{
+  display: block;
+  width: 4rem;
+  height: 0.4rem;
+  background-color: var(--color3);
+}
+
+@media screen and (max-width: 1200px){
+  .container-section{
+    margin: 0 4rem;
+  }
+}
+
 /* TRANSITION */
 
 a, .btn{
@@ -43,17 +92,22 @@ a, .btn{
   color: var(--color3);
 }
 
-section{
-  display: flex;
-  justify-content: center;
-  
-  padding-top: 4vh;
-  box-sizing: border-box;
-  min-height: fit-content;
-}
-
 @media screen and (max-width: 1200px){
   .arrow{
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .section__text__p1{
+    font-size: 1.1rem;
+  }
+  
+  .section__text__p2{
+    font-size: 1.3rem;
+  }
+  
+  .title{
+    font-size: 2.7rem;
   }
 }

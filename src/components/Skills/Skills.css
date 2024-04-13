@@ -1,0 +1,40 @@
+.skills-container{
+  padding: 1rem 0;
+  gap: 0.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.icon-container{
+  border: 1px solid var(--color1);
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 6rem;
+  height: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container:hover{
+  transition: 0.3s ease-in;
+  background-color: #dadada95;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.123);
+}
+
+.icon-container img{
+  height: 4rem;
+  width: 4rem;
+}
+
+.icon-container p{
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color1);
+  text-align: center;
+}
+
+
