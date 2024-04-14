@@ -3,7 +3,7 @@ import { SubTitle } from '../utils/SubTitle'
 
 export function Experience(){
   return(
-    <div id="experience" className="ability-about">
+    <div id="experience">
       <div className="subtitles-container">
         <SubTitle>Sobre Minhas</SubTitle>
         <h1 className='title'>Experiências</h1>

@@ -1,17 +1,13 @@
 .container-ability{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 4rem;
-  box-sizing: border-box;
-  /* gap: 4vh; */
-}
-
-.ability-about{
-
 }
 
 @media screen and (max-width: 1000px){
   .container-ability{
     flex-direction: column;
+    gap: 4vh;
   }
 }

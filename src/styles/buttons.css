@@ -6,7 +6,7 @@
 }
 
 
-.btn {
+.btn, .btn-2 {
   display: inline-block;
   text-decoration: none;
   padding: .75rem 1.25rem;
@@ -20,7 +20,7 @@
   margin-top: 1rem;
 }
 
-.btn:after {
+.btn:after, .btn-2:after{
   content: '';
   position: absolute;
   bottom: 0;
@@ -32,49 +32,33 @@
   z-index: -2;
 }
 
-.btn:before {
+.btn:before, .btn-2:before{
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: var(--color1); /* darken(#0cf, 15%) */
+  background-color: var(--color1);
   transition: all .3s;
   border-radius: 10rem;
   z-index: -1;
 }
 
-.btn:hover {
+.btn-2:after{
+  background-color: var(--color5);
+}
+
+.btn-2:before{
+  background-color: var(--color4);
+}
+
+.btn:hover, .btn-2:hover {
   color: white;
 }
 
-.btn:hover:before {
+.btn:hover:before, .btn-2:hover:before{
   width: 100%;
-}
-
-.btn-color-1:before{
-  color: var(--color3);
-  border: 1px solid var(--color3);
-  background: transparent;
-}
-
-.btn-color-1:after{
-  color: white;
-  background: var(--color3);
-  border: 1px solid var(--color3);
-}
-
-.btn-color-2:before{
-  color: white;
-  background: var(--color3);
-  border: 1px solid var(--color3);
-}
-
-.btn-color-2:after{
-  color: white;
-  background: var(--color1);
-  border: 1px solid var(--color1);
 }
 
 @media screen and (max-width: 600px){

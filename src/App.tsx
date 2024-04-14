@@ -10,8 +10,7 @@ export function App() {
       <Header/> 
       <About/>
       <Ability/>
-      {/* <Projects/>
-      <Contact/>
+      {/* <Contact/>
       <Footer/> */}
     </>
   )

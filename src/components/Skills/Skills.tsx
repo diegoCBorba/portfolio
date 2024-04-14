@@ -15,7 +15,7 @@ import typescript from "../../assets/images/icons/typescript.svg"
 
 export function Skills(){
   return(
-    <div>
+    <div className="ability-about">
       <SubTitle>Sobre Minhas</SubTitle>
       <h1 className='title'>Habilidades</h1>
       <div className="skills-container">
