@@ -74,8 +74,11 @@ export function CarouselProject(){
                   backgroundImage: `url(${item.img})`,
                   backgroundColor: item.background
                 }}
+                initial={{
+                  backgroundSize: "77% 57%"
+                }}
                 whileHover={{
-                  scale: 1.05
+                  backgroundSize: "82% 62%"
                 }}
               />
               <div className="about-project">
