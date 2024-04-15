@@ -12,11 +12,13 @@ export function Table() {
     <ul
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      className="table-project"
     >
       <ShowProject 
       className={isHovered ? "hovered" : "no-hovered"} 
       img={imageProject}
       background={background}
+      desktop={true}
       />
       {data.map((project, index) => {
         return (

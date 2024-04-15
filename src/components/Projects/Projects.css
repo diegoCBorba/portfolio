@@ -1,19 +1,17 @@
-#project li, ul{
+#projects li, ul{
   list-style: none;
 }
 
-#project li{
+#projects li{
   border-top: 1px solid var(--color2);
 }
 
-#project li:last-child{
+#projects li:last-child{
   border-bottom: 1px solid var(--color2);
 }
 
-
-#project ul{
+.table-project{
   margin-top: 2rem;
-  margin-bottom: 8rem;
 }
 
 .project-link{
@@ -96,8 +94,74 @@
 
 /* Projects Mobile */
 
+#projects.project-mobile li{
+  border-top: none;
+} 
+
+.project-mobile > .container-section > .sub-title-container, 
+.project-mobile > .container-section > h1{
+  margin-left: 4rem;
+}
+
 .project-mobile{
   display: none;
+}
+
+.projects-mobile-container{
+  padding-left: 2.5vw;
+  margin: 2rem 0;
+}
+
+.mobile-container{
+  text-decoration: none;
+  color: var(--color1);
+}
+
+.picture-project{
+  width: 45vw;
+  height: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color2);
+  background-size: 35vw 25vw;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-project h2{
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color2);
+  width: 45vw;
+  font-size: 3.5vw;
+}
+
+.about-project p{
+  padding-top: 0.5rem;
+  font-size: 2.3vw;
+}
+
+.box-mobile{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color1);
+
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  position: fixed;
+}
+
+.project-mobile .box-view{
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1440px){
@@ -116,5 +180,28 @@
   }
   .project-mobile{
     display: flex;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .projects-mobile-container{
+    padding-left: 4vw;
+  }
+
+  .picture-project{
+    width: 92vw;
+    height: 92vw;
+
+    background-size: 70vw 50vw;
+  }
+  
+  .about-project h2{
+    width: 92vw;
+    font-size: 6.5vw;
+  }
+  
+  .about-project p{
+    padding-top: 0.5rem;
+    font-size: 4vw;
   }
 }

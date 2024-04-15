@@ -30,7 +30,7 @@ export function About(){
             </div>
           </div>
         </div>
-        <Arrow src="#experience"/>
+        <Arrow src="#projects"/>
       </div>
     </section>
   )

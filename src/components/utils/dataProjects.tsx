@@ -16,7 +16,7 @@ export const data = [
     description: "Design e Desenvolvimento",
     img: projeto2,
     background: "#818C70",
-    src: "https://github.com/diegoCBorba/2barquitetos"
+    src: "https://2barquitetos.vercel.app/"
   },
   {
     title: "Agenda de Contatos",
@@ -30,6 +30,6 @@ export const data = [
     description: "Desenvolvimento",
     img: projeto4,
     background: "#212121",
-    src: "https://github.com/diegoCBorba/projeto-cordel"
+    src: "https://diegocborba.github.io/projeto-cordel/"
   },
 ]
