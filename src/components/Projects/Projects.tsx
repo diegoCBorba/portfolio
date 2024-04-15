@@ -1,15 +1,18 @@
 import './Projects.css'
 import { SubTitle } from '../utils/SubTitle'
-import { Carrossel } from '../utils/Carrossel'
-
+import { Arrow } from '../utils/Arrow';
+import { Table } from '../utils/table-project/Table';
 
 export function Projects(){
+
   return(
-    <div id="projects">
-      <SubTitle>Sobre Meus</SubTitle>
-      <h1 className='title'>Projetos</h1>
-      <Carrossel/>
-    </div>
+    <section id="project" className="project-desktop">
+      <div className="container-section">
+        <SubTitle>Sobre Meus</SubTitle>
+        <h1 className='title'>Projetos</h1>
+        <Table/>
+        <Arrow src="#contacts"/>
+      </div>
+    </section>
   )
 }
-
