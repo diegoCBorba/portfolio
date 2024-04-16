@@ -58,6 +58,13 @@
   margin-right: 30px;
 }
 
+
+@media screen and (min-width: 2000px){
+  .bigNameContainer span{
+    padding-bottom: 4vw;
+  }
+}
+
 @media screen and (max-width: 1000px){
   .parallax .scroller{
     font-size: 9rem;
@@ -79,5 +86,11 @@
 
   .bigNameContainer{
     padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-height: 500px){
+  .bigNameContainer{
+    display: none;
   }
 }
