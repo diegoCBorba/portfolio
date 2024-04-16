@@ -9,12 +9,6 @@ export function Table() {
   const [imageProject, setImageProject] = useState("");
   const [background, setBackground] = useState("")
 
-  function getTamanhoDaTela() {
-    const largura = window.innerWidth
-    console.log(largura)
-    return largura
-  }
-
   return (
     <ul
     onMouseEnter={() => setIsHovered(true)}
