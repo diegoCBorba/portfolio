@@ -3,12 +3,16 @@ import "./Loading.css"
 import { motion } from "framer-motion"
 
 export function PreLoader(){
+  function setOverflow(){
+    document.body.style.overflow = 'visible';
+  }
 
   return(
     <motion.div className="loading-container"
     initial={{height: "100%"}}
     animate={{height: "0%"}}
     transition={{delay: 4, duration: 0.5}}
+    onAnimationComplete={setOverflow}
     >
       <div className="texts-container">
         <motion.span
