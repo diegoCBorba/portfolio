@@ -9,21 +9,28 @@ export function Table() {
   const [imageProject, setImageProject] = useState("");
   const [background, setBackground] = useState("")
 
+  function getTamanhoDaTela() {
+    const largura = window.innerWidth
+    console.log(largura)
+    return largura
+  }
+
   return (
     <ul
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className="table-project"
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+    className="table-project"
     >
-      <ShowProject 
-      className={isHovered ? "hovered" : "no-hovered"} 
-      img={imageProject}
-      background={background}
-      desktop={true}
-      />
+    <ShowProject 
+    className={isHovered ? "hovered" : "no-hovered"} 
+    img={imageProject}
+    background={background}
+    desktop={true}
+    />
       {data.map((project, index) => {
         return (
           <motion.li
+            initial={{padding: `0 ${getTamanhoDaTela() > 1441 ? "10%" : "5%"}`}}
             whileHover={{padding: "0 3%"}}
             key={index} 
             onMouseEnter={() => {
