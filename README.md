@@ -37,7 +37,7 @@ Para executar o projeto localmente, você pode usar os seguintes comandos:
 npm run dev
 ```
 
-Este comando iniciará o servidor de desenvolvimento. Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visualizar o projeto.
+Este comando iniciará o servidor de desenvolvimento.
 
 - **Build de produção:**
 
