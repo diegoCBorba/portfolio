@@ -66,6 +66,12 @@
   animation: shake 0.5s;
 }
 
+@media screen and (max-width: 1023px){
+  #contacts{
+    margin-top: 4rem;
+  }
+}
+
 @media screen and (max-width: 1000px){
   .title-contact{
     font-size: 2rem;
@@ -94,7 +100,6 @@
   }
   
   .funny-button svg{
-    color: var(--color2);
     height: 40px;
     width: 40px; 
   }
@@ -123,8 +128,18 @@
 }
 
 @media screen and (max-width: 406px){
+  .funny-button a{
+    height: 80px;
+    width: 80px;
+  }
+  
+  .funny-button svg{
+    height: 40px;
+    width: 40px; 
+  }
+
   .funny-button{
-    top: 70%;
-    left: 80%;
+    top: 75%;
+    left: 70%;
   }
 }

@@ -4,9 +4,14 @@ import "./Contact.css";
 export function Contact() {
   return (
     <section id="contacts">
-      <div className="container-section">
+      <motion.div className="container-section"
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{type: "spring", delay: 0.1}}
+      >
         <div className="top-section">
-          <h1 className="title-contact">Vamos Trabalhar <br/> Juntos!</h1>
+          <h1 className="title-contact"
+          >Vamos Trabalhar <br/> Juntos!</h1>
           <FunnyButton />
         </div>
         <div className="container-buttons-contact">
@@ -23,7 +28,7 @@ export function Contact() {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
@@ -37,6 +42,8 @@ function FunnyButton() {
         whileTap={{
           scale: 0.9
         }}
+        initial={{scale: 0}}
+        whileInView={{scale: 1}}
         transition={{
           duration: 0.2
         }}

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "./HamburguerNav.css"
+import { motion } from "framer-motion"
 
 export function HamburgerNav(){
   const [menuState, setMenuState] = useState<boolean>(false)
@@ -19,14 +20,30 @@ export function HamburgerNav(){
           <span></span>
           <span></span>
         </div>
-        <div 
-        className={`menu-links ${menuState ? 'open' : ''}`} 
-        onClick={toggleMenu}>
-          <li><a className="nav-a" href="#about">Sobre</a></li>
-          <li><a className="nav-a" href="#experience">Experiência</a></li>
-          <li><a className="nav-a" href="#projects">Projetos</a></li>
-          <li><a className="nav-a" href="#contacts">Contatos</a></li>
-        </div>
+        <motion.div 
+        className={`menu-links`} 
+        animate={{
+          width: menuState ? "100%" : "0%"
+        }}
+        transition={{
+          duration: 0.7,
+        }}
+        >
+          <div className="container-nav">
+            <div className="links-about">
+              <p>Navegação</p>
+              <ul>
+                <li onClick={toggleMenu}><a className="nav-b" href="#about">Sobre</a></li>
+                {/* <li><a className="nav-b" href="#experience">Experiência</a></li> */}
+                <li onClick={toggleMenu}><a className="nav-b" href="#projects">Projetos</a></li>
+                <li onClick={toggleMenu}><a className="nav-b" href="#contacts">Contatos</a></li>
+              </ul>
+            </div>
+            <div className="links-copyright">
+              <p>&#169; Diego Cardoso</p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </nav>
   )

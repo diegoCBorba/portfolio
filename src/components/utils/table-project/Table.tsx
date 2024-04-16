@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { ShowProject } from "./ShowProject";
 import { data } from "../dataProjects";
+import { motion } from "framer-motion";
 
 export function Table() {
   const [isHovered, setIsHovered] = useState(false);
@@ -22,9 +23,10 @@ export function Table() {
       />
       {data.map((project, index) => {
         return (
-          <li 
-          key={index} 
-          onMouseEnter={() => {
+          <motion.li
+            whileHover={{padding: "0 3%"}}
+            key={index} 
+            onMouseEnter={() => {
             setImageProject(project.img)
             setBackground(project.background)
           }}
@@ -35,7 +37,7 @@ export function Table() {
                 <p>{project.description}</p>
               </div>
             </a>
-          </li>
+          </motion.li>
         );
       })}
     </ul>

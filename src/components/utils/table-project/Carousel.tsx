@@ -32,7 +32,7 @@ export function CarouselProject(){
   }
   
   return(
-    <>
+    <div className="slider-container">
       <ShowProject
         className={isHovered ? "hovered" : "no-hovered"} 
         desktop={false}
@@ -88,6 +88,6 @@ export function CarouselProject(){
             </a>
           ))}
       </Carousel>
-    </>
+    </div>
   )
 }

@@ -2,11 +2,16 @@ import "./About.css"
 import cv from "../../assets/pdfs/curriculo-s-24.pdf"
 import { Arrow } from "../utils/Arrow"
 import { SubTitle } from "../utils/SubTitle"
+import { motion } from "framer-motion"
 
 export function About(){
   return(
     <section id="about">
-      <div className="container-section">
+      <motion.div className="container-section"
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{type: "spring", delay: 0.1}}
+      >
         <SubTitle>Conheça Mais</SubTitle>
         <p className="title">Sobre mim</p>
         <div className="about-container">
@@ -24,14 +29,18 @@ export function About(){
             </a>
           </div>
           <div className="section-about">
-            <p className="section__text__p2">Sou um estudante de Engenharia da Computação com experiência em desenvolvimento web e análise de dados, estou preparado para agregar em equipes de desenvolvimento de software. Minha abordagem se concentra em oferecer soluções eficazes e estratégias orientadas a resultados  de forma consistente e inovadora.</p>
+            <motion.p className="section__text__p2"
+            initial={{ scale: 0.9 }}
+            whileInView={{ scale:1 }}
+            transition={{type: "spring", delay: 0}}
+            >Sou um estudante de Engenharia da Computação com experiência em desenvolvimento web e análise de dados, estou preparado para agregar em equipes de desenvolvimento de software. Minha abordagem se concentra em oferecer soluções eficazes e estratégias orientadas a resultados  de forma consistente e inovadora.</motion.p>
             <div>
               <a href={cv} target="__blank" className="btn">Download CV</a>
             </div>
           </div>
         </div>
         <Arrow src="#projects"/>
-      </div>
+      </motion.div>
     </section>
   )
 }

@@ -1,12 +1,13 @@
-#projects li, ul{
+.table-project li, .table-project{
   list-style: none;
 }
 
-#projects li{
+.table-project li{
   border-top: 1px solid var(--color2);
+  padding: 0 10%;
 }
 
-#projects li:last-child{
+.table-project li:last-child{
   border-bottom: 1px solid var(--color2);
 }
 
@@ -24,7 +25,6 @@
 }
 
 .project-container{
-  width: 80%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -98,11 +98,6 @@
   border-top: none;
 } 
 
-.project-mobile > .container-section > .sub-title-container, 
-.project-mobile > .container-section > h1{
-  margin-left: 4rem;
-}
-
 .project-mobile{
   display: none;
 }
@@ -164,20 +159,34 @@
   font-size: 1rem;
 }
 
+.slider-container{
+  display: none;
+}
+
 @media screen and (max-width: 1440px){
   .project-container h2{
     font-size: 2.5rem;
   }
 
-  .project-container{
-    width: 90%;
+  .table-project li{
+    padding: 0 5%;
   }
 }
 
 @media screen and (max-width: 1023px){
-  .project-desktop{
+  .project > .container-section > .sub-title-container, 
+  .project > .container-section > h1{
+    margin-left: 4rem;
+  }
+
+  .table-project{
     display: none;
   }
+
+  .slider-container{
+    display: block;
+  }
+
   .project-mobile{
     display: flex;
   }

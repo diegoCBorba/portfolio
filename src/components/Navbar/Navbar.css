@@ -14,7 +14,7 @@ nav{
   font-size: 1.5rem;
 }
 
-.nav-a {
+.nav-a, .nav-b {
   color: var(--color1);
   text-decoration: none;
   
@@ -22,7 +22,7 @@ nav{
   position: relative;
 }
 
-.nav-a:after {    
+.nav-a:after, .nav-b::after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -30,12 +30,19 @@ nav{
   height: 1px;
   left: 50%;
   position: absolute;
-  background: var(--color1);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 
-.nav-a:hover:after { 
+.nav-a::after{
+  background: var(--color1);
+}
+
+.nav-b::after{
+  background: var(--color2);
+}
+
+.nav-a:hover:after, .nav-b:hover:after { 
   width: 100%; 
   left: 0; 
 }
