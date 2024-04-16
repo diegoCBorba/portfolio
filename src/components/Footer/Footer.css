@@ -1,6 +1,6 @@
 footer{
-  margin: 0 rem;
-  padding-bottom: 4rem;
+  padding: 2rem 0;
+  background-color: var(--color2);
 }
 
 footer p{

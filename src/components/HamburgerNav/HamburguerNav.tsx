@@ -25,7 +25,7 @@ export function HamburgerNav(){
           <li><a className="nav-a" href="#about">Sobre</a></li>
           <li><a className="nav-a" href="#experience">Experiência</a></li>
           <li><a className="nav-a" href="#projects">Projetos</a></li>
-          <li><a className="nav-a" href="#contact">Contatos</a></li>
+          <li><a className="nav-a" href="#contacts">Contatos</a></li>
         </div>
       </div>
     </nav>

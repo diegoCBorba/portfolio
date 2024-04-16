@@ -12,8 +12,8 @@ export function App() {
       <About/>
       <Projects/>
       <ProjectSlider/>
+      <Contact/>
       <Footer/>
-      {/* /* <Contact/> */}
     </>
   )
 }

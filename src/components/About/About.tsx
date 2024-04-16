@@ -24,7 +24,7 @@ export function About(){
             </a>
           </div>
           <div className="section-about">
-            <p className="section__text__p2">Sou um programador com experiência em desenvolvimento web e análise de dados, estou preparado para agregar em equipes de desenvolvimento de software. Minha abordagem se concentra em oferecer soluções eficazes e estratégias orientadas a resultados  de forma consistente e inovadora.</p>
+            <p className="section__text__p2">Sou um estudante de Engenharia da Computação com experiência em desenvolvimento web e análise de dados, estou preparado para agregar em equipes de desenvolvimento de software. Minha abordagem se concentra em oferecer soluções eficazes e estratégias orientadas a resultados  de forma consistente e inovadora.</p>
             <div>
               <a href={cv} target="__blank" className="btn">Download CV</a>
             </div>
