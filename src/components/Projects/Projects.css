@@ -193,6 +193,11 @@
 }
 
 @media screen and (max-width: 620px){
+  .hovered{
+    width: 0%;
+    visibility: hidden;
+  }
+
   .projects-mobile-container{
     padding-left: 4vw;
   }
