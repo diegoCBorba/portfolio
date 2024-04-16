@@ -1,7 +1,3 @@
-Claro, aqui está um exemplo de README para o seu repositório do GitHub:
-
----
-
 # Meu Portfolio
 
 Este é o repositório do meu portfolio pessoal, desenvolvido com React, Typescript e animações utilizando a biblioteca Framer Motion. Este projeto foi inicializado com o Vite.
