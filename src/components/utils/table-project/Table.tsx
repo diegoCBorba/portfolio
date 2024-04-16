@@ -30,7 +30,7 @@ export function Table() {
       {data.map((project, index) => {
         return (
           <motion.li
-            initial={{padding: `0 ${getTamanhoDaTela() > 1441 ? "10%" : "5%"}`}}
+            initial={{padding: `0 7%`}}
             whileHover={{padding: "0 3%"}}
             key={index} 
             onMouseEnter={() => {
