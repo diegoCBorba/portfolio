@@ -21,7 +21,7 @@
 
 .funny-button{
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 80%;
 }
 
@@ -79,7 +79,7 @@
   }
 
   .funny-button{
-    top: 40%;
+    top: 50%;
     left: 80%;
   }
 
@@ -91,7 +91,7 @@
 @media screen and (max-width: 630px){
   .funny-button{
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 80%;
   }
   
@@ -140,7 +140,7 @@
   }
 
   .funny-button{
-    top: 75%;
+    top: 80%;
     left: 70%;
   }
 }
